@@ -1,0 +1,86 @@
+$mainBoldFont: MotserratBold;
+$mainRegularFont: MontserratRegular;
+$lightFont: Roboto;
+$lightColor: #fff;
+$darkColor: #000;
+$titleSection: 22px;
+$colorButton: #ff4e50;
+
+.top-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 114px;
+    &__item{
+        font-family: $mainBoldFont;
+        font-size: 14px;
+    }
+}
+.logo__text, .login__item{
+    color: $lightColor;
+}
+.logo__text{
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: $mainBoldFont;
+    &_other{
+        font-size: 16px;
+        color: $colorButton;
+        letter-spacing: .8px;
+    }
+}
+.login__item{
+    padding: 9px 17px;
+    &_active{
+        display: inline-block;
+        border: 2px solid #ffffff;
+        border-radius: 22px;
+    }
+}
+.section{    
+    background-position: top;
+    &_first-section{
+        height: 700px;
+        background: linear-gradient(to right, rgba(0,0,0,.3), rgba(0,0,0,.3)), url(../images/bg-section.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    &_regular{
+        padding: 99px 0 0 0;
+    }
+    &__title{
+        font-family: $mainBoldFont;
+        text-align: center;
+        font-size: $titleSection;
+        margin: 0 0 36px 0;
+        &_big-size{
+            max-width: 500px;
+            font-size: 52px;
+            color: $lightColor;
+            text-transform: uppercase;
+        }
+    }
+    &__subtitle{
+        color: $lightColor;
+        font-family: $lightFont;
+        font-size: 24px;
+        font-weight: 300;
+        margin: 0 0 30px 0;
+    }
+    &__button{
+        height: 40px;
+        background-color: transparent;
+        border: 2px solid $colorButton;
+        border-radius: 20px;
+        font-family: $mainBoldFont;
+        font-size: 14px;
+        color: $colorButton;
+        padding: 0 22px;
+        &_fill{
+            background-color: $colorButton;
+            color: $lightColor;
+        }
+    }
+}

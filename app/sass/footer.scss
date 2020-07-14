@@ -1,0 +1,41 @@
+$mainBoldFont: MotserratBold;
+$mainRegularFont: MontserratRegular;
+$lightFont: Roboto;
+$lightColor: #fff;
+$darkColor: #000;
+$titleSection: 22px;
+$colorButton: #ff4e50;
+
+.footer{
+    border-top: 4px solid $colorButton;
+    padding: 40px 0;
+    &__about-company{
+        width: 540px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.company__title, .partners__title{
+    font-size: 14px;
+    font-family: $mainBoldFont;
+    color: #333333;
+    margin: 0 0 14px 0;
+}
+.company{
+    &__item{
+        font-family: $lightFont;
+        font-size: 14px;
+        color: #666666;
+        margin: 0 0 10px 0;
+    }
+}
+.developer{
+    &__text{
+        font-family: $mainBoldFont;
+        letter-spacing: 1px;
+        font-size: 10px;
+        text-transform: uppercase;
+        color: #cccccc;
+        margin: 0 0 9px 33px;
+    }
+}

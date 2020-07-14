@@ -1,0 +1,61 @@
+$mainBoldFont: MotserratBold;
+$mainRegularFont: MontserratRegular;
+$lightFont: Roboto;
+$lightColor: #fff;
+$darkColor: #000;
+$titleSection: 22px;
+$colorButton: #ff4e50;
+
+.about-works{
+    display: flex;
+    justify-content: space-between;
+}
+.step-work{
+    padding: 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex: 0 0 300px;
+    box-sizing: border-box;
+    height: 400px;
+    border-radius: 4px;
+    &__number{
+        display: inline-block;
+        height: 20px;
+        padding: 0 8px 0 13px;
+        border-radius: 10px;
+        background-color: $colorButton;
+        font-size: 10px;
+        line-height: 21px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $lightColor;
+    }
+    &__title{
+        font-size: 24px;
+        font-family: $mainBoldFont;
+        color: $lightColor;
+    }
+    &__description{
+        font-size: 14px;
+        color: #cccccc;
+        font-family: $mainRegularFont;
+    }
+    &:nth-child(1){
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step1.jpg);
+        background-repeat: no-repeat;
+    }
+    &:nth-child(2){
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step2.jpg);
+        background-repeat: no-repeat;
+    }
+    &:nth-child(3){
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step3.jpg);
+        background-repeat: no-repeat;
+    }
+    > * {
+        margin: 15px 0 0 0;
+    }
+}

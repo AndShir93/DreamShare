@@ -1,0 +1,44 @@
+$mainBoldFont: MotserratBold;
+$mainRegularFont: MontserratRegular;
+$lightFont: Roboto;
+@font-face{
+    font-family: $mainBoldFont;
+    src: url(../fonts/MotserratBold.ttf); 
+}
+@font-face{
+    font-family: $mainRegularFont;
+    src: url(../fonts/MontserratRegular.ttf); 
+}
+@font-face{
+    font-family: $lightFont;
+    src: url(../fonts/Roboto.ttf); 
+}
+body{
+    font-family: $lightFont;
+}
+.container{
+    height: 100%;
+    max-width: 940px;
+    margin: 0 auto;
+    display: flex;
+    &_column{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &_row{
+        justify-content: space-between;
+    }
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+@import 'first-section';
+@import 'about-works';
+@import 'partner';
+@import 'ideas';
+@import 'form';
+@import 'footer';
