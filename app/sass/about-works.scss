@@ -16,7 +16,7 @@ $colorButton: #ff4e50;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-start;
-    flex: 0 0 300px;
+    flex: 0 1 300px;
     box-sizing: border-box;
     height: 400px;
     border-radius: 4px;
@@ -50,6 +50,7 @@ $colorButton: #ff4e50;
     &:nth-child(2){
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step2.jpg);
         background-repeat: no-repeat;
+        margin: 0 20px;
     }
     &:nth-child(3){
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step3.jpg);

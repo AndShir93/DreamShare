@@ -134,6 +134,15 @@ body {
   color: #fff;
 }
 
+@media (max-width: 1024px) {
+  .section_regular {
+    padding: 99px 20px 0 20px;
+  }
+  .top-menu {
+    padding: 0 20px;
+  }
+}
+
 .about-works {
   display: flex;
   justify-content: space-between;
@@ -145,7 +154,7 @@ body {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  flex: 0 0 300px;
+  flex: 0 1 300px;
   box-sizing: border-box;
   height: 400px;
   border-radius: 4px;
@@ -185,6 +194,7 @@ body {
 .step-work:nth-child(2) {
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step2.jpg);
   background-repeat: no-repeat;
+  margin: 0 20px;
 }
 
 .step-work:nth-child(3) {
@@ -247,9 +257,22 @@ body {
   margin: 35px 0 0 0;
 }
 
+@media (max-width: 1024px) {
+  .partner-wrapper {
+    max-width: 460px;
+    flex-wrap: wrap;
+  }
+  .partner-wrapper__item {
+    margin: 0 0 44px 0;
+  }
+  .partner__button {
+    margin: 0;
+  }
+}
+
 .ideas-wrapper {
   display: grid;
-  grid-template: repeat(3, 310px)/repeat(3, 300px);
+  grid-template: repeat(3, 310px)/repeat(3, minmax(200px, 300px));
   grid-gap: 20px;
 }
 
@@ -331,7 +354,7 @@ body {
 }
 
 .footer__about-company {
-  width: 540px;
+  width: 50%;
   display: flex;
   justify-content: space-between;
 }
@@ -357,4 +380,13 @@ body {
   text-transform: uppercase;
   color: #cccccc;
   margin: 0 0 9px 33px;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 40px 20px;
+  }
+  .footer__about-company {
+    width: 66%;
+  }
 }
