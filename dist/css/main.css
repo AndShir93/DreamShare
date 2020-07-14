@@ -143,6 +143,15 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .top-menu {
+    justify-content: center;
+  }
+  .top-menu .logo {
+    display: none;
+  }
+}
+
 .about-works {
   display: flex;
   justify-content: space-between;
