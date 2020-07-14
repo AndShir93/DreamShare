@@ -50,3 +50,15 @@ $colorButton: #ff4e50;
         margin: 35px 0 0 0;
     }
 }
+@media (max-width: 1024px){
+    .partner-wrapper{
+        max-width: 460px;
+        flex-wrap: wrap;
+        &__item{
+            margin: 0 0 44px 0;
+        }
+    }
+    .partner__button{
+        margin: 0;
+    }
+}

@@ -1,0 +1,39 @@
+.form-wrapper {
+  text-align: center;
+}
+
+.form-wrapper__title {
+  font-family: Roboto;
+  font-size: 18px;
+  color: #333333;
+  margin: 0 0 33px 0;
+}
+
+.form-wrapper__form {
+  margin: 0 0 100px 0;
+}
+
+.form__email {
+  width: 240px;
+  height: 40px;
+  box-sizing: border-box;
+  box-shadow: 0 1px 0 #eeeeee;
+  border-radius: 4px;
+  border: 1px solid #cccccc;
+  color: #999999;
+  font-family: Roboto;
+  font-size: 14px;
+  padding: 0 0 0 16px;
+}
+
+.form__button {
+  width: 160px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ff4e50;
+  font-size: 14px;
+  font-family: MotserratBold;
+  color: #fff;
+  border: 0px;
+  margin: 0 0 0 6px;
+}

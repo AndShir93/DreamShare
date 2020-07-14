@@ -84,3 +84,12 @@ $colorButton: #ff4e50;
         }
     }
 }
+
+@media (max-width: 1024px){
+    .section_regular{
+        padding: 99px 20px 0 20px;
+    }
+    .top-menu{
+        padding: 0 20px;
+    }
+}
