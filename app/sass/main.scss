@@ -3,15 +3,15 @@ $mainRegularFont: MontserratRegular;
 $lightFont: Roboto;
 @font-face{
     font-family: $mainBoldFont;
-    src: url(../fonts/MotserratBold.ttf); 
+    src: url(../fonts/MotserratBold.woff); 
 }
 @font-face{
     font-family: $mainRegularFont;
-    src: url(../fonts/MontserratRegular.ttf); 
+    src: url(../fonts/MontserratRegular.woff); 
 }
 @font-face{
     font-family: $lightFont;
-    src: url(../fonts/Roboto.ttf); 
+    src: url(../fonts/Roboto.woff); 
 }
 body{
     font-family: $lightFont;

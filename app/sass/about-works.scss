@@ -7,10 +7,12 @@ $titleSection: 22px;
 $colorButton: #ff4e50;
 
 .about-works{
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 .step-work{
+    width: 100%;
     padding: 19px;
     display: flex;
     flex-direction: column;
@@ -34,11 +36,13 @@ $colorButton: #ff4e50;
         color: $lightColor;
     }
     &__title{
+        width: 100%;
         font-size: 24px;
         font-family: $mainBoldFont;
         color: $lightColor;
     }
     &__description{
+        width: 100%;;
         font-size: 14px;
         color: #cccccc;
         font-family: $mainRegularFont;
@@ -46,15 +50,18 @@ $colorButton: #ff4e50;
     &:nth-child(1){
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step1.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
     }
     &:nth-child(2){
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step2.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
         margin: 0 20px;
     }
     &:nth-child(3){
         background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%), url(../images/bg-step3.jpg);
         background-repeat: no-repeat;
+        background-size: cover;
     }
     > * {
         margin: 15px 0 0 0;
@@ -62,6 +69,7 @@ $colorButton: #ff4e50;
 }
 @media (max-width: 768px){
     .about-works{
+        width: 300px;
         flex-direction: column;
         &__items{
             flex-basis: 240px;

@@ -63,3 +63,9 @@ $colorButton: #ff4e50;
         margin: 0;
     }
 }
+@media (max-width: 430px){
+    .partner-wrapper{
+        width: 220px;
+        flex-direction: column;
+    }
+}
