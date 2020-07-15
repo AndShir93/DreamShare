@@ -68,4 +68,7 @@
     width: 220px;
     flex-direction: column;
   }
+  .partner-wrapper__item {
+    margin: 0 0 31px 0;
+  }
 }

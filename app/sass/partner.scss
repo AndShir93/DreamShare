@@ -67,5 +67,8 @@ $colorButton: #ff4e50;
     .partner-wrapper{
         width: 220px;
         flex-direction: column;
+        &__item{
+            margin: 0 0 31px 0;
+        }
     }
 }

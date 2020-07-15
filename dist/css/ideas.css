@@ -68,12 +68,13 @@
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
   .ideas-wrapper {
     width: auto;
     grid-template: repeat(7, 121px)/repeat(1, 300px);
-    -ms-grid-rows: 121px 20px 121px 20px 121px 20px 121px 20px 121px 20px 121px 20px 121px 20px 121px;
+    -ms-grid-rows: 121px 10px 121px 10px 121px 10px 121px 10px 121px 10px 121px 10px 121px 10px 121px;
     -ms-grid-columns: 300px;
+    grid-gap: 10px;
   }
   .ideas-wrapper__item:nth-child(n) {
     grid-column: 1;

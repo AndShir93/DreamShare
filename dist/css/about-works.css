@@ -68,7 +68,7 @@
   margin: 15px 0 0 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 740px) {
   .about-works {
     width: 300px;
     flex-direction: column;
