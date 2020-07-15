@@ -1,11 +1,16 @@
 var gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
-    sassGlob = require('gulp-sass-glob');;
+    autoprefixer = require('gulp-autoprefixer');
+
 
 gulp.task('sass',function(){
     return gulp.src('app/sass/*.scss')
     .pipe(sass({outputStyle: 'expanded'}).on('error',sass.logError))
+    .pipe(autoprefixer({
+        browsers: ['last 2 versions'],
+        cascade: false
+    }))
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.reload({stream: true}));
 });
