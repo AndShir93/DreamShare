@@ -36,6 +36,11 @@ body{
     left: 0;
     right: 0;
 }
+@media (max-width: 768px){
+    .container{
+        max-width: 500px;
+    }
+}
 @import 'first-section';
 @import 'about-works';
 @import 'partner';

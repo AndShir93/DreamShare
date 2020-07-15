@@ -47,3 +47,35 @@ $colorButton: #ff4e50;
         }
     }
 }
+@media (max-width: 604px){
+    .container_row{
+        flex-direction: column;
+    }
+    .footer{
+        padding: 20px 0;
+        &__logo{
+            margin: 0 0 13px 0;
+        }
+        &__about-company{
+            flex-direction: column;
+            align-items: center;
+            margin: auto;
+        }
+        &__developer{
+            text-align: center;
+        }
+    }
+    .company{
+        text-align: center;
+        &__list{
+            width: 194px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    .developer{
+        &__text{
+            margin: 0 0 10px 0;
+        }
+    }
+}

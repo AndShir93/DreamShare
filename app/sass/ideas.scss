@@ -40,3 +40,13 @@ $colorButton: #ff4e50;
         text-align: center;
     }
 }
+@media (max-width: 768px){
+    .ideas-wrapper{
+        grid-template: repeat(7, 121px)/repeat(1, 300px);
+        &__item{
+            &:nth-child(n){
+                grid-column: 1/2;
+            }
+        }
+    }
+}

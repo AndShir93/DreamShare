@@ -37,3 +37,21 @@
   border: 0px;
   margin: 0 0 0 6px;
 }
+
+@media (max-width: 476px) {
+  .form-wrapper__title {
+    margin: 0 0 16px 0;
+  }
+  .form-wrapper__form {
+    margin: 0 0 40px 0;
+  }
+  .form {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .form__email, .form__button {
+    width: auto;
+  }
+}

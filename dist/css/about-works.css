@@ -60,3 +60,18 @@
 .step-work > * {
   margin: 15px 0 0 0;
 }
+
+@media (max-width: 768px) {
+  .about-works {
+    flex-direction: column;
+  }
+  .about-works__items {
+    flex-basis: 240px;
+  }
+  .step-work {
+    background-size: cover;
+  }
+  .step-work:nth-child(2) {
+    margin: 10px 0;
+  }
+}

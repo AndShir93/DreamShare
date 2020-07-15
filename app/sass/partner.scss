@@ -54,6 +54,7 @@ $colorButton: #ff4e50;
     .partner-wrapper{
         max-width: 460px;
         flex-wrap: wrap;
+        justify-content: space-around;
         &__item{
             margin: 0 0 44px 0;
         }

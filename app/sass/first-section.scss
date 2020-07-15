@@ -6,6 +6,10 @@ $darkColor: #000;
 $titleSection: 22px;
 $colorButton: #ff4e50;
 
+body{
+    min-width: 320px;
+    position: relative;
+}
 .top-menu{
     width: 100%;
     display: flex;
@@ -39,7 +43,8 @@ $colorButton: #ff4e50;
         border-radius: 22px;
     }
 }
-.section{    
+.section{
+    box-sizing: border-box;
     background-position: top;
     &_first-section{
         height: 700px;
@@ -94,10 +99,42 @@ $colorButton: #ff4e50;
     }
 }
 @media (max-width: 768px){
+    .section{
+        &__title{
+            font-size: 18px;
+        }
+        &_first-section{
+            height: 540px;
+            padding: 0 10px;
+        }
+        &_regular{
+            padding: 38px 10px 0 10px;
+        }
+        &__title{
+            margin: 0 0 18px 0;
+            &_big-size{
+                margin: 64px 0 0 0;
+                font-size: 30px;
+            }
+        }
+        &__subtitle{
+            font-size: 18px;
+            margin: 19px 0;
+        }
+        &__button{
+            width: 280px;
+        }
+    }
     .top-menu{
         justify-content: center;
+        padding: 0;
+        height: 80px;
         & .logo{
-            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 143px  0 0 0;
+            text-align: center;
         }
     }
 }

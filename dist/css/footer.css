@@ -40,3 +40,34 @@
     width: 66%;
   }
 }
+
+@media (max-width: 604px) {
+  .container_row {
+    flex-direction: column;
+  }
+  .footer {
+    padding: 20px 0;
+  }
+  .footer__logo {
+    margin: 0 0 13px 0;
+  }
+  .footer__about-company {
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+  }
+  .footer__developer {
+    text-align: center;
+  }
+  .company {
+    text-align: center;
+  }
+  .company__list {
+    width: 194px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .developer__text {
+    margin: 0 0 10px 0;
+  }
+}

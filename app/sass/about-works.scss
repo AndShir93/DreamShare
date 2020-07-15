@@ -60,3 +60,17 @@ $colorButton: #ff4e50;
         margin: 15px 0 0 0;
     }
 }
+@media (max-width: 768px){
+    .about-works{
+        flex-direction: column;
+        &__items{
+            flex-basis: 240px;
+        }
+    }
+    .step-work{
+        background-size: cover;;
+        &:nth-child(2){
+            margin: 10px 0;
+        }
+    }
+}

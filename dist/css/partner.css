@@ -53,6 +53,7 @@
   .partner-wrapper {
     max-width: 460px;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
   .partner-wrapper__item {
     margin: 0 0 44px 0;

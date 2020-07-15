@@ -1,3 +1,8 @@
+body {
+  min-width: 320px;
+  position: relative;
+}
+
 .top-menu {
   width: 100%;
   display: flex;
@@ -39,6 +44,7 @@
 }
 
 .section {
+  box-sizing: border-box;
   background-position: top;
 }
 
@@ -101,10 +107,40 @@
 }
 
 @media (max-width: 768px) {
+  .section__title {
+    font-size: 18px;
+  }
+  .section_first-section {
+    height: 540px;
+    padding: 0 10px;
+  }
+  .section_regular {
+    padding: 38px 10px 0 10px;
+  }
+  .section__title {
+    margin: 0 0 18px 0;
+  }
+  .section__title_big-size {
+    margin: 64px 0 0 0;
+    font-size: 30px;
+  }
+  .section__subtitle {
+    font-size: 18px;
+    margin: 19px 0;
+  }
+  .section__button {
+    width: 280px;
+  }
   .top-menu {
     justify-content: center;
+    padding: 0;
+    height: 80px;
   }
   .top-menu .logo {
-    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 143px  0 0 0;
+    text-align: center;
   }
 }

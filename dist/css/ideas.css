@@ -35,3 +35,12 @@
   color: #fff;
   text-align: center;
 }
+
+@media (max-width: 768px) {
+  .ideas-wrapper {
+    grid-template: repeat(7, 121px)/repeat(1, 300px);
+  }
+  .ideas-wrapper__item:nth-child(n) {
+    grid-column: 1/2;
+  }
+}
